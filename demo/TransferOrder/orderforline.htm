@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>生成交接单</title>
+<link rel="stylesheet" href="../css/css.css" type="text/css" />
+<link href="../css/table.css" rel="stylesheet" type="text/css">
+</head>
+<script  language="javascript">  
+       function  selectAll()  
+       {  
+       var  arrObj  =  document.all;  
+       for(var  i  =  0;  i  <  arrObj.length;i++)  
+       {  
+ 
+                               if(typeof  arrObj[i].type  !=  "undefined"  &&  arrObj[i].type=='checkbox')  arrObj[i].checked  =true;  
+       }  
+       }  
+ 
+       function  unSelectAll()  
+       {  
+           var  arrObj  =  document.all;  
+       for(var  i  =  0;  i  <  arrObj.length;i++)  
+       {  
+                               if(typeof  arrObj[i].type  !=  "undefined"  &&  arrObj[i].type=='checkbox')  arrObj[i].checked  =false;  
+       }  
+       }  
+</script> 
+<body leftmargin="0" topmargin="15">
+<form name="bornform" method="post" action="">
+
+<table width="90%" align="center" border="1" bordercolor="#0033FF"  cellspacing="0">
+<tr bgcolor="#799AE1">
+    <th scope="col">线路名称</th>
+    <th scope="col">班次号</th>
+	<th scope="col">到达时间</th>
+    <th scope="col">下一运输地址</th>
+	<th scope="col">下一运输点到达时间</th>
+    <th scope="col">车辆类型</th>
+    <th scope="col">满载率</th>
+	<th scope="col">操作</th>
+</tr>
+<tr align="center">
+    <td>津京线</td>
+    <td>hj98</td>
+    <td>2009-9-1 14：30</td>
+    <td>北京</td>
+    <td>2009-9-1 16：00</td>
+    <td>卡车</td>
+	<td>50%</td>
+	<td><a href="born.htm"><font style="color:#00FF00">选取订单</font></a></td>
+  </tr>
+  
+  <tr align="center">
+    <td>唐津京线</td>
+    <td>hj98878788</td>
+    <td>2009-9-1 20：50</td>
+    <td>北京</td>
+    <td>2009-9-1 22：40</td>
+    <td>卡车</td>
+	<td>60%</td>
+	<td><font style="color:#00FF00">选取订单</font></td>
+  </tr>
+</table>
+<br>
+
+<table align="center">
+<tr align="center">
+<td  style="text-align:center">
+ <a href="#"> 首页</a> &nbsp;&nbsp;&nbsp;&nbsp;   
+ <a href="#">上 一页</a>  &nbsp;&nbsp;&nbsp;&nbsp;  
+ <a href="#">下一页</a>  &nbsp;&nbsp;&nbsp;&nbsp;   
+ <a href="#">末页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  共几页&nbsp;&nbsp;&nbsp;&nbsp;
+  当前第几页 &nbsp;&nbsp;&nbsp;&nbsp;
+  跳转到第<input name="gonpage" type="text" size="2">
+  页   
+ </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

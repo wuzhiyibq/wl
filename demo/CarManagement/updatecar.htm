@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>车辆管理</title>
+<link rel="stylesheet" href="../css/css.css" type="text/css">
+</head>
+
+<body>
+<font size=6>
+<marquee height=40 width=80% size=9 loop=-1>
+车辆信息查询及删除
+</marquee> 
+</font>
+<form action="#" >
+<table width="800" border="1">
+    <tr>
+      <td >车辆类型</td>
+	  <td colspan="2">
+      
+		<form action=/cgi-bin/post-query method=POST>
+		<select name=cartype>
+        <option>卡车
+        <option selected>轿车
+        <option value=My_Favorite>货车
+		</select><p>
+		</form>
+</td>
+    </tr>
+    <tr>
+      <td>车辆名称</td>
+      <td colspan="2"><label>
+        <input name="carnumber" type="text" id="carnumber" size="140"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>号牌号码</td>
+      <td colspan="2"><label>
+        <input name="carnumber" type="text" id="carnumber" size="140"/>
+      </label></td>
+    </tr>
+	
+  </table>
+  <p>
+    <label>
+    <input name="提交" type="submit" id="提交" value="查询" />
+    </label>
+    <label>
+    <input name="重置" type="reset" id="重置" value="重置" />
+    </label>
+  </p>
+  <p>&nbsp;</p>
+</form>
+
+</body>
+</html>

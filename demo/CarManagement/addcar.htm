@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>车辆管理</title>
+<link rel="stylesheet" href="../css/css.css" type="text/css">
+</head>
+
+<body>
+<font size=6>
+<marquee height=40 width=80% size=9 loop=-1>
+车辆信息
+</marquee> 
+</font>
+<form action="../CarManagement/updatecar.html" >
+<table width="800" border="1">
+    <tr>
+      <td >车辆类型</td>
+	  <td colspan="2">
+		<select name=cartype>
+        <option>卡车
+        <option selected>轿车
+        <option value=My_Favorite>货车
+		</select><p>
+</td>
+    </tr>
+ <tr>
+      <td>车辆名称</td>
+      <td colspan="2"><label>
+        <input name="carnumber" type="text" id="carnumber" size="100"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>号牌号码</td>
+      <td colspan="2"><label>
+        <input name="carnumber" type="text" id="carnumber" size="100"/>
+      </label></td>
+    </tr>
+  
+	<tr>
+	  <td>总质量</td>
+	  <td colspan="2"><label>
+	  <input name="weight" type="text"  id="weight"   size="100"/></label>&nbsp;千克</td>
+	  </tr>
+    <tr>
+      <td>核定载质量</td>
+      <td><label>
+        <input name="loanweight" type="text" id="loanweight" size="100" />
+      </label>千克</td>
+    </tr>
+	<tr>
+	  <td>驾驶室共乘</td>
+	  <td colspan="2"><label>
+	  <input name="driver" type="text"  id="driver"   size="100"/></label>&nbsp;位</td>
+	  </tr>
+	  <tr>
+	  <td>货箱内部尺寸</td>
+	  <td colspan="2"><label>
+	  <input name="innersize" type="text"  id="innersize"   size="100"/></label>&nbsp;长(cm)*高(cm)*宽(cm)</td>
+	  </tr>
+	  <tr>
+	  <td>外廓尺寸</td>
+	  <td colspan="2"><label>
+	  <input name="contoursize" type="text"  id="contoursize"   size="100"/></label>&nbsp;长(cm)*高(cm)*宽(cm)</td>
+	  </tr>
+	  <td>检验记录</td>
+	  <td colspan="2"><label>
+	  <input name="contoursize" type="plaintext"  id="contoursize"   size="100"/></label></td>
+	  </tr>
+	<tr align="right">
+	<td>&nbsp;</td>
+	<td>
+    <input name="提交" type="submit" id="提交" value="提交" />
+    <input name="重置" type="reset" id="重置" value="重置" /></td>
+	</td>
+	</tr>
+  </p>
+  <p>&nbsp;</p>
+    </table>
+</form>
+
+</body>
+</html>

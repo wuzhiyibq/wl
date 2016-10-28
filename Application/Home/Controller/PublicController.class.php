@@ -1,0 +1,14 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class PublicController extends Controller
+{
+    public function login()
+    {
+        if ($_SESSION['uid']) {
+        	$this->redirect('Public/login');
+        }
+        $this->redirect('Index/index');
+
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>权限管理</title>
+<link rel="stylesheet" href="../css/css.css" type="text/css" />
+<style type="text/css">
+<!--
+.style5 {
+	font-size: 14px;
+	color: #55A0FF;
+}
+.style8 {color: #6633FF}
+.style15 {color: #3333FF}
+-->
+</style>
+</head>
+
+<body>
+<table width="1052" border=0 align=center cellpadding=2 cellspacing=1 bordercolor="#799AE1" class=tableBorder>
+    <tbody>
+      <tr>
+        <th align=center colspan=16 style="height: 23px">权限信息</th>
+      </tr>
+      <tr bgcolor="#DEE5FA">
+        <td colspan="16" align="center" class=txlrow>&nbsp;</td>  
+	  <tr align="center" height="1" bgcolor="#FFFFFF">
+	    <td colspan="16"align="center"class="style5"><span class="style15">查询依据</span>：    
+	      <select name="staffinf" size="1" class="style8" >
+          <option>---权限ID---</option>
+          <option>---权限名称---</option>
+          </select>
+          &nbsp;<span class="style15">&nbsp;内容：</span>	    <input name="searchinf" type="text" size="15">
+		<a href="power.htm"><u><span class="style8"><span class="style15">GO</span></u></a></span></td>
+      </tr>
+	  
+	  
+	  
+	  <tr align="center" bgcolor="#799AE1">
+	  <td width="8%" align="center" class="txlHeaderBackgroundAlternate">权限ID</td>
+        <td width="8%" align="center" class=txlHeaderBackgroundAlternate>权限名称</td>
+		<td width="20%" align="center" class=txlHeaderBackgroundAlternate>权限内容</td>
+        <td width="10%" align="center" class=txlHeaderBackgroundAlternate>权限范围</td>
+	    
+		<td width="5%" align="center" class=txlHeaderBackgroundAlternate>操作</td>
+		 <td width="5%" align="center" class=txlHeaderBackgroundAlternate>选定</td>
+		
+	  </tr>
+	   
+   
+        <tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.1</td>
+        <td align=center class=txlrow>线路管理员</td>
+		<td align=center class=txlrow>1.管理运输线路 2.增、删、改、查配送点信息 3.查询运费</td>
+		<td align=center class= txlrow>总公司</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		
+      </tr>
+	  
+	  <tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.2</td>
+        <td align=center class=txlrow>运费管理员</td>
+		<td align=center class=txlrow>1.增、删、改、查运费信息</td>
+		<td align=center class= txlrow>总公司</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		
+        
+      </tr>
+	  <tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.3</td>
+        <td align=center class=txlrow>系统管理员</td>
+		<td align=center class=txlrow>1.管理公司员工信息 2.管理公司公告 3.管理订单用户注册管理</td>
+		<td align=center class= txlrow>总公司</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		
+      </tr>
+	  <tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.4</td>
+        <td align=center class=txlrow>仓库管理员</td>
+		<td align=center class=txlrow>1.货物出库确定 2.查询班车信息 3.货物入库确定</td>
+		<td align=center class= txlrow>总公司</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		
+      </tr>
+	  <tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.5</td>
+        <td align=center class=txlrow>配送范围管理员</td>
+		<td align=center class=txlrow>1.增、删、改、查配送范围</td>
+		<td align=center class= txlrow>总公司</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+	  </tr>
+		<tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.6</td>
+        <td align=center class=txlrow>订单审核员</td>
+		<td align=center class=txlrow>1.维护订单信息 2.审核订单 3.确认订单信息</td>
+		<td align=center class= txlrow>分配送点</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		</tr>
+		<tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.7</td>
+        <td align=center class=txlrow>交接单管理员</td>
+		<td align=center class=txlrow>1.管理生成订单 2.处理订单异常</td>
+		<td align=center class= txlrow>分配送点</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		</tr>
+	  <tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.8</td>
+        <td align=center class=txlrow>利润分配管理员</td>
+		<td align=center class=txlrow>1.产看利润信息 2.分配利润</td>
+		<td align=center class= txlrow>总公司</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+	  </tr>
+		<tr bgcolor="#DEE5FA">
+        <td align="center" class="txlrow">No.9</td>
+        <td align=center class=txlrow>下单用户</td>
+		<td align=center class=txlrow>1.创建、删除、修改、查看订单</td>
+		<td align=center class= txlrow>其他</td>
+		<td align=center class=txlrow><a href="#"><u>删除</u></a></td>
+		<td align=center class=txlrow><a href="update_power.htm"><u>修改</u></a></td>
+		</tr>
+</body>
