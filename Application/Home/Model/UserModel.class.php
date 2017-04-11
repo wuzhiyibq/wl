@@ -4,8 +4,9 @@ use Think\Model;
 
 class UserModel extends Model
 {
-    public function getUserList()
+    public function getUserList($conditions)
     {
+        if ($conditions[''])
     	$list = $this->select();
     	return $list;
     }

@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>管理页面</title>
+    <link type="text/css" rel="stylesheet" src="__PUBLIC__/css/left.css">
     <style type="text/css">
         body {
             background: #799ae1;
@@ -76,31 +77,26 @@
         }
     </style>
 
-    <SCRIPT language=javascript1.2>
+    <script>
         function showsubmenu(sid) {
             whichEl = eval("submenu" + sid);
             if (whichEl.style.display == "none") {
                 eval("submenu" + sid + ".style.display=\"\";");
-            }
-            else {
+            } else {
                 eval("submenu" + sid + ".style.display=\"none\";");
             }
         }
-
 
         function closed() {
             var a = confirm("确定要关闭页面吗?");
             if (a) {
                 window.top.close();
             }
-            else {
-
-            }
         }
-    </SCRIPT>
+    </script>
 
-    <meta http-equiv=content-type content="text/html; charset=gb2312">
-    <meta content="mshtml 6.00.2900.2180" name=generator>
+    <meta http-equiv=content-type content="text/html; charset=utf-8">
+    <meta content="mshtml 6.00.2900.2180" name="generator">
 </head>
 
 <body leftmargin=0 topmargin=0 marginwidth="0" marginheight="0">
@@ -145,7 +141,7 @@
                             <table cellspacing=0 cellpadding=0 width=135 align=center>
                                 <tbody>
                                 <tr>
-                                    <td height=20><a href="__app__/user/userlist" target=mainframe>用户信息浏览</a></td>
+                                    <td height=20><a href="__APP__/customer/customerList" target="mainFrame">用户信息浏览</a></td>
                                 </tr>
                                 </tbody>
                             </table>

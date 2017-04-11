@@ -6,7 +6,7 @@ return array(
     //'URL_CASE_INSENSITIVE'  =>  true,       //url中controller名大小写不敏感
     //'MODULE_ALLOW_LIST'    =>    array('Home','Admin','User'),  //可访问模块
     'DEFAULT_MODULE'        =>  'Home',    //默认模块
-    'DEFAULT_CONTROLLER'    =>  'Index',
+    'DEFAULT_CONTROLLER'    =>  'Public',
     'DEFAULT_ACTION'    =>  'index',
     'URL_MODEL'             =>  '2',       //URL模式
     'SESSION_AUTO_START'    =>  true,      //是否开启session
@@ -29,7 +29,7 @@ return array(
     'DB_PORT' => 3306, // 端口
     'DB_CHARSET'=> 'utf8', // 字符集
     'DB_DEBUG' => TRUE, // 数据库调试模式 开启后可以记录SQL日志 3.2.3新增
-   
+
    /* 'DB_CONFIG1' => array(
         'DB_TYPE'               =>  'mysql',     // 数据库类型
         'DB_HOST'               =>  '127.0.0.1',    // 服务器地址

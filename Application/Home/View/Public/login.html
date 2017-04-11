@@ -1,52 +1,66 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>”√ªßµ«¬º</TITLE><LINK 
-href="images/Default.css" type=text/css rel=stylesheet><LINK 
-href="images/xtree.css" type=text/css rel=stylesheet><LINK 
-href="images/User_Login.css" type=text/css rel=stylesheet>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
-<META content="MSHTML 6.00.6000.16674" name=GENERATOR></HEAD>
-<BODY id=userlogin_body>
-<DIV></DIV>
-<FORM action="login.html"  method="post">
-<DIV id="user_login">
-<DL>
-  <DD id="user_top">
-  <UL>
-    <LI class="user_top_l"></LI>
-    <LI class="user_top_c"></LI>
-    <LI class="user_top_r"></LI></UL>
-  <DD id="user_main">
-  <UL>
-    <LI class=user_main_l></LI>
-    <LI class=user_main_c>
-    <DIV class=user_main_box>
-    <UL>
-      <LI class=user_main_text>”√ªß√˚£∫ </LI>
-      <LI class=user_main_input><INPUT class=TxtUserNameCssClass id="TxtUserName"
-      maxLength=20 name=TxtUserName> </LI></UL>
-    <UL>
-      <LI class=user_main_text>√‹ ¬Î£∫ </LI>
-      <LI class=user_main_input><INPUT class=TxtPasswordCssClass id=TxtPassword 
-      type=password name=TxtPassword> </LI></UL>
-    <UL>
-      <LI class=user_main_text>Cookie£∫ </LI>
-      <LI class=user_main_input><SELECT id=DropExpiration name=DropExpiration> 
-        <OPTION value=None selected>≤ª±£¥Ê</OPTION> <OPTION value=Day>±£¥Ê“ªÃÏ</OPTION> 
-        <OPTION value=Month>±£¥Ê“ª‘¬</OPTION> <OPTION 
-      value=Year>±£¥Ê“ªƒÍ</OPTION></SELECT> </LI></UL></DIV></LI>
-    <LI class=user_main_r><INPUT class=IbtnEnterCssClass id=IbtnEnter 
-    style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
-    onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("IbtnEnter", "", true, "", "", false, false))' 
-    type=image src="images/user_botton.gif" name=IbtnEnter> </LI></UL>
-  <DD id=user_bottom>
-  <UL>
-    <LI class=user_bottom_l></LI>
-    <LI class=user_bottom_r></LI></UL></DD></DL></DIV><SPAN id=ValrUserName 
-style="DISPLAY: none; COLOR: red"></SPAN><SPAN id=ValrPassword 
-style="DISPLAY: none; COLOR: red"></SPAN><SPAN id=ValrValidateCode 
-style="DISPLAY: none; COLOR: red"></SPAN>
-<DIV id=ValidationSummary1 style="DISPLAY: none; COLOR: red"></DIV>
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en" "http://www.w3c.org/tr/1999/rec-html401-19991224/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Áî®Êà∑ÁôªÂΩï</title>
+    <link href="__PUBLIC__/images/default.css" type="text/css" rel="stylesheet">
+    <link href="__PUBLIC__/images/xtree.css" type="text/css" rel="stylesheet">
+    <link href="__PUBLIC__/images/user_login.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="mshtml 6.00.6000.16674" name="generator">
+</head>
+<body id="userlogin_body">
+<div></div>
+<form action="login.html" method="post">
+    <div id="user_login">
+        <dl>
+            <dd id="user_top">
+                <ul>
+                    <li class="user_top_l"></li>
+                    <li class="user_top_c"></li>
+                    <li class="user_top_r"></li>
+                </ul>
+            <dd id="user_main">
+                <ul>
+                    <li class="user_main_l"></li>
+                    <li class="user_main_c">
+                        <div class="user_main_box">
+                            <ul>
+                                <li class="user_main_text">Áî®Êà∑ÂêçÔºö</li>
+                                <li class="user_main_input"><input class="txtusernamecssclass" id="username" maxlength="20" name="username"></li>
+                            </ul>
+                            <ul>
+                                <li class="user_main_text">ÂØÜ Á†ÅÔºö</li>
+                                <li class="user_main_input"><input class="txtpasswordcssclass" id="password" type="password" name="password"></li>
+                            </ul>
+                            <ul>
+                                <li class="user_main_text">‰øùÂ≠òË¥¶Âè∑Ôºö</li>
+                                <li class="user_main_input">
+                                    <select id="dropexpiration" name="dropexpiration">
+                                        <option value="none" selected>‰∏ç‰øùÂ≠ò</option>
+                                        <option value="day">‰øùÂ≠ò‰∏ÄÂ§©</option>
+                                        <option value="month">‰øùÂ≠ò‰∏ÄÊúà</option>
+                                        <option value="year">‰øùÂ≠ò‰∏ÄÂπ¥</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="user_main_r"><input class="ibtnentercssclass" id="ibtnenter" style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" onclick='javascript:webform_dopostbackwithoptions(new webform_postbackoptions("ibtnenter", "", true, "", "", false, false))' type=image src="images/user_botton.gif" name=ibtnenter></li>
+                </ul>
+            <dd id="user_bottom">
+                <ul>
+                    <li class="user_bottom_l"></li>
+                    <li class="user_bottom_r"></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <span id="valrusername" style="display: none; color: red"></span><span id="valrpassword" style="display: none; color: red"></span><span
+        id="valrvalidatecode"
+        style="display: none; color: red"></span>
+    <div id="validationsummary1" style="display: none; color: red"></div>
 
-<DIV></DIV>
-
-</FORM></BODY></HTML>
+    <div></div>
+</form>
+</body>
+</html>
