@@ -4,6 +4,11 @@ use Think\Controller;
 
 class UserController extends Controller
 {
+    public function __initialize()
+    {
+        
+    }
+
     public function userlist()
     {
     	$this->userList = D('User')->getUserList();
