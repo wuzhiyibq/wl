@@ -3,6 +3,8 @@
 <head>
     <title>管理页面</title>
     <link type="text/css" rel="stylesheet" src="__PUBLIC__/css/left.css">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/left.js"></script>
     <style type="text/css">
         body {
             background: #799ae1;
@@ -77,24 +79,6 @@
         }
     </style>
 
-    <script>
-        function showsubmenu(sid) {
-            whichEl = eval("submenu" + sid);
-            if (whichEl.style.display == "none") {
-                eval("submenu" + sid + ".style.display=\"\";");
-            } else {
-                eval("submenu" + sid + ".style.display=\"none\";");
-            }
-        }
-
-        function closed() {
-            var a = confirm("确定要关闭页面吗?");
-            if (a) {
-                window.top.close();
-            }
-        }
-    </script>
-
     <meta http-equiv=content-type content="text/html; charset=utf-8">
     <meta content="mshtml 6.00.2900.2180" name="generator">
 </head>
@@ -116,7 +100,7 @@
                 <tr>
                     <td class=menu_title onmouseover="this.classname='menu_title2';"
                         onmouseout="this.classname='menu_title';" background="" height=25>
-                        <span>| <a href="#" onclick="closed()"><b>退出</b></a></span></td>
+                        <span>| <a href="__APP__/Public/logout" onclick="closed()"><b>退出</b></a></span></td>
                 </tr>
                 <tr>
                     <td class=menu_title onmouseover="this.classname='menu_title2';"
@@ -512,8 +496,7 @@
                             <table cellspacing=0 cellpadding=0 width=135 align=center>
                                 <tbody>
                                 <tr>
-                                    <td
-                                            height=20></td>
+                                    <td height=20></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -611,19 +594,12 @@
             <table cellspacing=0 cellpadding=0 width=158 align=center>
                 <tbody>
                 <tr>
-                    <td class=menu_title id=menutitle1
-                        onmouseover="this.classname='menu_title2';"
-                        onmouseout="this.classname='menu_title';"
-                        background=images/admin_left_9.gif
-                        height=25><span>版权信息</span></td>
-                </tr>
-                <tr>
                     <td>
                         <div class=sec_menu style="width: 158px">
                             <table cellspacing=0 cellpadding=0 width=135 align=center>
                                 <tbody>
                                 <tr>
-                                    <td height=20 bgcolor="#d6dff7" style="line-height: 150%">版权:421软件开发小组</td>
+                                    <td height=20 bgcolor="#d6dff7" style="line-height: 150%">版权:wzy</td>
                                 </tr>
                                 </tbody>
                             </table>

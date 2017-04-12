@@ -29,6 +29,13 @@ class PublicController extends Controller
         $this->display();
     }
 
+    public function logout()
+    {
+        if (session_destroy()) {
+            echo "<javascript>parent.window.location.href='/login';</javascript>";
+        }
+    }
+
     public function index()
     {
         $this->display();

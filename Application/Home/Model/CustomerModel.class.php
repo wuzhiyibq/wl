@@ -23,6 +23,12 @@ class CustomerModel extends Model
     	return $list;
     }
 
+    //删除单个用户  以后可能扩展成批量删除
+    public function deleteCustomer($customer_id)
+    {
+        return $this->delete($customer_id);
+    }
+
     public function getCustomer()
     {
     	$uid = I('get.uid');
