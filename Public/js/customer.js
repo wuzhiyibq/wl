@@ -1,4 +1,8 @@
 $(function(){
+
+    getCitiesByProvince($("input[name='provinceid']").val());
+    getAreasByCity($("input[name='cityid']").val());
+
     $("#province").change(function(){
         var provinceid = $('#province option:selected').val();
         getCitiesByProvince(provinceid);
@@ -36,8 +40,14 @@ function getCitiesByProvince(provinceid)
          dataType: "json",
          success: function(data){
              var str = "";
+             var cust_cityid = $("input[name='cityid']").val();
              $.each(data, function(key, val){
-                 str += "<option value='"+val.cityid+"'>"+val.city+"</option>";
+                 if (val.cityid == cust_cityid) {
+                     str += "<option value='"+val.cityid+"' selected>"+val.city+"</option>";
+                 } else {
+                     str += "<option value='"+val.cityid+"'>"+val.city+"</option>";
+                 }
+
              });
              $("#city").html(str);
           }
@@ -53,8 +63,16 @@ function getAreasByCity(cityid)
          dataType: "json",
          success: function(data){
              var str = "";
+             var cust_areaid = $("input[name='areaid']").val();
+
              $.each(data, function(key, val){
-                 str += "<option value='"+val.areaid+"'>"+val.area+"</option>";
+                 if (val.areaid == cust_areaid) {
+
+                     str += "<option value='"+val.areaid+"' selected>"+val.area+"</option>";
+                 } else {
+                     str += "<option value='"+val.areaid+"'>"+val.area+"</option>";
+                 }
+
              });
              $("#area").html(str);
           }

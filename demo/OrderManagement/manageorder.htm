@@ -3,174 +3,174 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>²éÑ¯¶©µ¥</title>
+<title>æŸ¥è¯¢è®¢å•</title>
 <link rel="stylesheet" href="../css/css.css" type="text/css">
 <link href="../css/table.css" rel="stylesheet" type="text/css">
 </head>
 <SCRIPT language=javascript src="../js/calendar.js"></SCRIPT>
-<script  language="javascript">  
-       function  selectAll()  
-       {  
-       var  arrObj  =  document.all;  
-       for(var  i  =  0;  i  <  arrObj.length;i++)  
-       {  
- 
-                               if(typeof  arrObj[i].type  !=  "undefined"  &&  arrObj[i].type=='checkbox')  arrObj[i].checked  =true;  
-       }  
-       }  
- 
-       function  unSelectAll()  
-       {  
-           var  arrObj  =  document.all;  
-       for(var  i  =  0;  i  <  arrObj.length;i++)  
-       {  
-                               if(typeof  arrObj[i].type  !=  "undefined"  &&  arrObj[i].type=='checkbox')  arrObj[i].checked  =false;  
-       }  
-       }  
+<script  language="javascript">
+       function  selectAll()
+       {
+       var  arrObj  =  document.all;
+       for(var  i  =  0;  i  <  arrObj.length;i++)
+       {
+
+                               if(typeof  arrObj[i].type  !=  "undefined"  &&  arrObj[i].type=='checkbox')  arrObj[i].checked  =true;
+       }
+       }
+
+       function  unSelectAll()
+       {
+           var  arrObj  =  document.all;
+       for(var  i  =  0;  i  <  arrObj.length;i++)
+       {
+                               if(typeof  arrObj[i].type  !=  "undefined"  &&  arrObj[i].type=='checkbox')  arrObj[i].checked  =false;
+       }
+       }
 	   function orderlist()
 	   {
 	      // window.open("../orderlist.htm","new","width=300,height=400");
 		   window.open("../orderlist.htm",null, "height=400,width=300,status=yes,toolbar=no,menubar=no,location=no");
 	   }
-</script> 
+</script>
 <body  topmargin="15">
 <form name="orderform" method="post" action="">
  <table width="90%" height="16"  align="center" >
 	  <tr >
-	    <td width="21%" height="16" align="left">·¢¼şÈËĞÕÃû£º  
-	      <input name="fromname" type="text" value="ÕÅÈı" size="12"></td>
-	    <td align="left">·¢»õ³ÇÊĞ£º
+	    <td width="21%" height="16" align="left">å‘ä»¶äººå§“åï¼š
+	      <input name="fromname" type="text" value="å¼ ä¸‰" size="12"></td>
+	    <td align="left">å‘è´§åŸå¸‚ï¼š
           <select name="fromcity" size="1">
             <option selected>----</option>
-            <option>±±¾©</option>
-            <option>Ìì½ò</option>
-            <option>Ê¯¼Ò×¯</option>
-            <option>Ö£Öİ</option>
+            <option>åŒ—äº¬</option>
+            <option>å¤©æ´¥</option>
+            <option>çŸ³å®¶åº„</option>
+            <option>éƒ‘å·</option>
           </select></td>
-        <td align="left">»õÆ·ÀàĞÍ£º
+        <td align="left">è´§å“ç±»å‹ï¼š
           <select name="goodstype" size="1">
-            <option>ÒÂÎï</option>
-            <option>µçÆ÷</option>
-            <option>ÆäËü</option>
+            <option>è¡£ç‰©</option>
+            <option>ç”µå™¨</option>
+            <option>å…¶å®ƒ</option>
             <option selected>----</option>
         </select></td>
-        <td align="left">ÆğÊ¼Ê±¼ä£º
+        <td align="left">èµ·å§‹æ—¶é—´ï¼š
           <input name="txtbeginDate" type="text" size="20" readonly>
-		<a title=Ñ¡ÔñÈÕÆÚ href="javascript:fPopCalendar(document.all.img1,document.orderform.txtbeginDate,700);"  style="text-decoration:none">
+		<a title=é€‰æ‹©æ—¥æœŸ href="javascript:fPopCalendar(document.all.img1,document.orderform.txtbeginDate,700);"  style="text-decoration:none">
                     <img id=img1 src="../images/img_date.gif" width="22" align=absMiddle border=0></img></a>
 		</td>
 	  </tr>
 	  <tr >
-	    <td height="16" align="left">ÊÕ¼şÈËĞÕÃû£º
+	    <td height="16" align="left">æ”¶ä»¶äººå§“åï¼š
         <input name="toname" type="text" size="12"></td>
-        <td width="15%" height="16" align="left">ÊÕ»õ³ÇÊĞ£º
+        <td width="15%" height="16" align="left">æ”¶è´§åŸå¸‚ï¼š
           <select name="tocity" size="1">
             <option selected>----</option>
-            <option>±±¾©</option>
-            <option>Ìì½ò</option>
-            <option>Ê¯¼Ò×¯</option>
-            <option>Ö£Öİ</option>
+            <option>åŒ—äº¬</option>
+            <option>å¤©æ´¥</option>
+            <option>çŸ³å®¶åº„</option>
+            <option>éƒ‘å·</option>
           </select></td>
-        <td width="15%" align="left">¶©µ¥×´Ì¬£º
+        <td width="15%" align="left">è®¢å•çŠ¶æ€ï¼š
           <select name="orderstate" size="1">
             <option selected>----</option>
-            <option>ÒÑÉó</option>
-            <option>ÔÚÍ¾</option>
-            <option>Èë¿â</option>
-            <option>´ıÉó</option>
+            <option>å·²å®¡</option>
+            <option>åœ¨é€”</option>
+            <option>å…¥åº“</option>
+            <option>å¾…å®¡</option>
           </select></td>
-        <td width="49%" align="left">½áÊøÊ±¼ä£º
+        <td width="49%" align="left">ç»“æŸæ—¶é—´ï¼š
           <input name="txtendDate" type="text" size="20"   readonly>
-          <a title=Ñ¡ÔñÈÕÆÚ href="javascript:fPopCalendar(document.all.img1,document.orderform.txtendDate,700);"  style="text-decoration:none"> 
+          <a title=é€‰æ‹©æ—¥æœŸ href="javascript:fPopCalendar(document.all.img1,document.orderform.txtendDate,700);"  style="text-decoration:none">
 		  <img id=img2 src="../images/img_date.gif" width="22" align=absMiddle border=0></a> </td>
       </tr>
-	 <tr > 
+	 <tr >
 	   <td height="16" colspan="4" align="left"><hr></td>
-  </table> 
-  
+  </table>
+
 <table width="90%" align="center">
 <tr align="right">
 <td width="90%"   >
-  <input type="submit" name="submitbtn" value="²éÑ¯"> &nbsp;&nbsp;&nbsp;
-  <input type="button" name="allselectbtn" value="È«Ñ¡" onClick="selectAll() "> &nbsp;&nbsp;&nbsp;
-  <input type="button" name="allnotselectbtn" value="·´Ñ¡" onClick="unSelectAll() ">&nbsp;&nbsp;&nbsp;
-<!--  <input type="button" name="addbtn" value="Ôö¼Ó"  >  &nbsp;&nbsp;&nbsp; -->
-  <a href="addorder.htm">Ôö¼Ó</a> &nbsp;&nbsp;&nbsp;
- 
-  <!-- <input type="button" name="deletebtn" value="±à¼­"> &nbsp;&nbsp;&nbsp; -->
-  <a href="addorder.htm">²é¿´</a> &nbsp;&nbsp;&nbsp;
-   <input type="button" name="changebtn" value="É¾³ı">  &nbsp;&nbsp;&nbsp;
-  <input type="button" name="checkbtn" value="ÉóºË"> &nbsp;&nbsp;&nbsp;
-  <input type="button" name="indepotbtn" value="Èë¿â">&nbsp;&nbsp;&nbsp;
-<input type="button" name="outdepotbtn" value="³ö¿â">&nbsp;&nbsp;&nbsp;
-<input type="button" name="sendbtn" value="ÅäËÍ">&nbsp;&nbsp;&nbsp;
-<input type="button" name="takebtn" value="È¡»õ">&nbsp;&nbsp;&nbsp;
-<input type="button" name="abnormalbtn" value="Òì³£"></td>
+  <input type="submit" name="submitbtn" value="æŸ¥è¯¢"> &nbsp;&nbsp;&nbsp;
+  <input type="button" name="allselectbtn" value="å…¨é€‰" onClick="selectAll() "> &nbsp;&nbsp;&nbsp;
+  <input type="button" name="allnotselectbtn" value="åé€‰" onClick="unSelectAll() ">&nbsp;&nbsp;&nbsp;
+<!--  <input type="button" name="addbtn" value="å¢åŠ "  >  &nbsp;&nbsp;&nbsp; -->
+  <a href="addorder.htm">å¢åŠ </a> &nbsp;&nbsp;&nbsp;
+
+  <!-- <input type="button" name="deletebtn" value="ç¼–è¾‘"> &nbsp;&nbsp;&nbsp; -->
+  <a href="addorder.htm">æŸ¥çœ‹</a> &nbsp;&nbsp;&nbsp;
+   <input type="button" name="changebtn" value="åˆ é™¤">  &nbsp;&nbsp;&nbsp;
+  <input type="button" name="checkbtn" value="å®¡æ ¸"> &nbsp;&nbsp;&nbsp;
+  <input type="button" name="indepotbtn" value="å…¥åº“">&nbsp;&nbsp;&nbsp;
+<input type="button" name="outdepotbtn" value="å‡ºåº“">&nbsp;&nbsp;&nbsp;
+<input type="button" name="sendbtn" value="é…é€">&nbsp;&nbsp;&nbsp;
+<input type="button" name="takebtn" value="å–è´§">&nbsp;&nbsp;&nbsp;
+<input type="button" name="abnormalbtn" value="å¼‚å¸¸"></td>
 </tr>
 </table>
 
 <table width="90%" border="1" align="center"  bordercolor="#799AE1"  cellspacing="0"  >
   <tr bgcolor="#799AE1">
     <th  scope="col">&nbsp;</th>
-    <th  scope="col">¶©µ¥±àºÅ</th>
-    <th scope="col">·¢¼şÈËĞÕÃû</th>
-    <th scope="col">ÊÕ¼şÈËĞÕÃû</th>
-    <th scope="col">·¢»õ³ÇÊĞ</th>
-    <th scope="col">ÊÕ»õ³ÇÊĞ</th>
-    <th scope="col">¶©µ¥×´Ì¬</th>
-    <th scope="col">ÏÂµ¥Ê±¼ä</th>
-    <th scope="col">ÏêÏ¸</th>
-	<th scope="col">²Ù×÷</th>
+    <th  scope="col">è®¢å•ç¼–å·</th>
+    <th scope="col">å‘ä»¶äººå§“å</th>
+    <th scope="col">æ”¶ä»¶äººå§“å</th>
+    <th scope="col">å‘è´§åŸå¸‚</th>
+    <th scope="col">æ”¶è´§åŸå¸‚</th>
+    <th scope="col">è®¢å•çŠ¶æ€</th>
+    <th scope="col">ä¸‹å•æ—¶é—´</th>
+    <th scope="col">è¯¦ç»†</th>
+	<th scope="col">æ“ä½œ</th>
   </tr>
   <tr align="center">
     <td><input type="checkbox" name="checkbox" value="checkbox"></td>
     <td>xc879697</td>
-    <td>ÀîËÄ</td>
-    <td>ÕÅÈı</td>
-    <td>±±¾©</td>
-    <td>Ìì½ò</td>
-    <td>ÒÑÉóºË</td>
+    <td>æå››</td>
+    <td>å¼ ä¸‰</td>
+    <td>åŒ—äº¬</td>
+    <td>å¤©æ´¥</td>
+    <td>å·²å®¡æ ¸</td>
     <td>2009-8-31 08:45:06</td>
-    <td><a href="#" onClick="orderlist()">ÏêÏ¸</a></td>
-	<td><a href="addorder.htm">²é¿´</a></td>
+    <td><a href="#" onClick="orderlist()">è¯¦ç»†</a></td>
+	<td><a href="addorder.htm">æŸ¥çœ‹</a></td>
   </tr>
   <tr align="center">
     <td><input type="checkbox" name="checkbox2" value="checkbox"></td>
     <td>xc879697</td>
-    <td>ÀîËÄ</td>
-    <td>ÕÅÈı</td>
-    <td>±±¾©</td>
-    <td>Ìì½ò</td>
-    <td>Î´ÉóºË</td>
+    <td>æå››</td>
+    <td>å¼ ä¸‰</td>
+    <td>åŒ—äº¬</td>
+    <td>å¤©æ´¥</td>
+    <td>æœªå®¡æ ¸</td>
     <td>2009-8-31 08:45:06</td>
-    <td><a href="#">ÏêÏ¸</a></td>
-	<td><a href="addorder.htm">²é¿´</a></td>
+    <td><a href="#">è¯¦ç»†</a></td>
+	<td><a href="addorder.htm">æŸ¥çœ‹</a></td>
   </tr>
   <tr align="center">
     <td><input type="checkbox" name="checkbox3" value="checkbox"></td>
     <td>xc879697</td>
-    <td>ÀîËÄ</td>
-    <td>ÕÅÈı</td>
-    <td>±±¾©</td>
-    <td>Ìì½ò</td>
-    <td>Î´ÉóºË</td>
+    <td>æå››</td>
+    <td>å¼ ä¸‰</td>
+    <td>åŒ—äº¬</td>
+    <td>å¤©æ´¥</td>
+    <td>æœªå®¡æ ¸</td>
     <td>2009-8-31 08:45:06</td>
-    <td><a href="#">ÏêÏ¸</a></td>
-	<td><a href="addorder.htm">²é¿´</a></td>
+    <td><a href="#">è¯¦ç»†</a></td>
+	<td><a href="addorder.htm">æŸ¥çœ‹</a></td>
   </tr>
 </table>
 <br>
 <table align="center">
 <tr align="center">
 <td  style="text-align:center">
- <a href="#"> Ê×Ò³</a> &nbsp;&nbsp;&nbsp;&nbsp;   
- <a href="#">ÉÏ Ò»Ò³</a>  &nbsp;&nbsp;&nbsp;&nbsp;  
- <a href="#">ÏÂÒ»Ò³</a>  &nbsp;&nbsp;&nbsp;&nbsp;   
- <a href="#">Ä©Ò³</a>&nbsp;&nbsp;&nbsp;&nbsp;
-  ¹²¼¸Ò³&nbsp;&nbsp;&nbsp;&nbsp;
-  µ±Ç°µÚ¼¸Ò³ &nbsp;&nbsp;&nbsp;&nbsp;
-  Ìø×ªµ½µÚ<input name="gonpage" type="text" size="2">
-  Ò³   
+ <a href="#"> é¦–é¡µ</a> &nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="#">ä¸Š ä¸€é¡µ</a>  &nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="#">ä¸‹ä¸€é¡µ</a>  &nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="#">æœ«é¡µ</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  å…±å‡ é¡µ&nbsp;&nbsp;&nbsp;&nbsp;
+  å½“å‰ç¬¬å‡ é¡µ &nbsp;&nbsp;&nbsp;&nbsp;
+  è·³è½¬åˆ°ç¬¬<input name="gonpage" type="text" size="2">
+  é¡µ
  </td>
 </tr>
 </table>

@@ -36,6 +36,12 @@ class PublicController extends Controller
         }
     }
 
+    //生成唯一订单号
+    public static function generateOrderId()
+    {
+        return date('YmdHis');
+    }
+
     public function index()
     {
         $this->display();

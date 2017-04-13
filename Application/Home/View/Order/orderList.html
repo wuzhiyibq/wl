@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>查询订单</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/css.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/css/table.css" type="text/css">
+    <script language="javascript" type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="__PUBLIC__/WdatePicker/WdatePicker.js"></script>
+    <script language="javascript" type="text/javascript" src="__PUBLIC__/js/order.js"></script>
+</head>
+
+<body topmargin="15">
+<form name="orderform" method="post" action="">
+    <table width="90%" height="16" align="center">
+        <tr>
+            <td width="21%" height="16" align="left">发件人姓名：
+                <input name="fromname" type="text" value="张三" size="12"></td>
+            <td align="left">发货城市：
+                <select name="fromcity" size="1">
+                    <option selected>----</option>
+                    <option>北京</option>
+                    <option>天津</option>
+                    <option>石家庄</option>
+                    <option>郑州</option>
+                </select></td>
+            <td align="left">货品类型：
+                <select name="goodstype" size="1">
+                    <option>衣物</option>
+                    <option>电器</option>
+                    <option>其它</option>
+                    <option selected>----</option>
+                </select></td>
+            <td align="left">起始时间：
+                <input type="text" name="sdate" onfocus="WdatePicker({skin:'default'})" value="{:I('get.sdate')}"/>
+            </td>
+        </tr>
+        <tr>
+            <td height="16" align="left">收件人姓名：
+                <input name="toname" type="text" size="12"></td>
+            <td width="15%" height="16" align="left">收货城市：
+                <select name="tocity" size="1">
+                    <option selected>----</option>
+                    <option>北京</option>
+                    <option>天津</option>
+                    <option>石家庄</option>
+                    <option>郑州</option>
+                </select></td>
+            <td width="15%" align="left">订单状态：
+                <select name="orderstate" size="1">
+                    <option selected>----</option>
+                    <option>已审</option>
+                    <option>在途</option>
+                    <option>入库</option>
+                    <option>待审</option>
+                </select></td>
+            <td width="49%" align="left">结束时间：
+                <input type="text" name="edate" onfocus="WdatePicker({skin:'default'})" value="{:I('get.edate')}"/>
+            </td>
+        </tr>
+        <tr>
+            <td height="16" colspan="4" align="left">
+                <hr>
+            </td>
+    </table>
+
+    <table width="90%" align="center">
+        <tr align="right">
+            <td width="90%">
+                <input type="submit" name="submitbtn" value="查询"> &nbsp;&nbsp;&nbsp;
+                <input type="button" name="allselectbtn" value="全选" onClick="selectAll() "> &nbsp;&nbsp;&nbsp;
+                <input type="button" name="allnotselectbtn" value="反选" onClick="unSelectAll() ">&nbsp;&nbsp;&nbsp;
+                <!--  <input type="button" name="addbtn" value="增加"  >  &nbsp;&nbsp;&nbsp; -->
+                <a href="addorder.htm">增加</a> &nbsp;&nbsp;&nbsp;
+
+                <!-- <input type="button" name="deletebtn" value="编辑"> &nbsp;&nbsp;&nbsp; -->
+                <a href="addorder.htm">查看</a> &nbsp;&nbsp;&nbsp;
+                <input type="button" name="changebtn" value="删除"> &nbsp;&nbsp;&nbsp;
+                <input type="button" name="checkbtn" value="审核"> &nbsp;&nbsp;&nbsp;
+                <input type="button" name="indepotbtn" value="入库">&nbsp;&nbsp;&nbsp;
+                <input type="button" name="outdepotbtn" value="出库">&nbsp;&nbsp;&nbsp;
+                <input type="button" name="sendbtn" value="配送">&nbsp;&nbsp;&nbsp;
+                <input type="button" name="takebtn" value="取货">&nbsp;&nbsp;&nbsp;
+                <input type="button" name="abnormalbtn" value="异常"></td>
+        </tr>
+    </table>
+
+    <table width="90%" border="1" align="center" bordercolor="#799AE1" cellspacing="0">
+        <tr bgcolor="#799AE1">
+            <th scope="col">&nbsp;</th>
+            <th scope="col">订单编号</th>
+            <th scope="col">发件人姓名</th>
+            <th scope="col">收件人姓名</th>
+            <th scope="col">发货城市</th>
+            <th scope="col">收货城市</th>
+            <th scope="col">订单状态</th>
+            <th scope="col">下单时间</th>
+            <th scope="col">详细</th>
+            <th scope="col">操作</th>
+        </tr>
+        <tr align="center">
+            <td><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>xc879697</td>
+            <td>李四</td>
+            <td>张三</td>
+            <td>北京</td>
+            <td>天津</td>
+            <td>已审核</td>
+            <td>2009-8-31 08:45:06</td>
+            <td><a href="#" onClick="orderList()">详细</a></td>
+            <td><a href="addorder.htm">查看</a></td>
+        </tr>
+        <tr align="center">
+            <td><input type="checkbox" name="checkbox2" value="checkbox"></td>
+            <td>xc879697</td>
+            <td>李四</td>
+            <td>张三</td>
+            <td>北京</td>
+            <td>天津</td>
+            <td>未审核</td>
+            <td>2009-8-31 08:45:06</td>
+            <td><a href="#">详细</a></td>
+            <td><a href="addorder.htm">查看</a></td>
+        </tr>
+        <tr align="center">
+            <td><input type="checkbox" name="checkbox3" value="checkbox"></td>
+            <td>xc879697</td>
+            <td>李四</td>
+            <td>张三</td>
+            <td>北京</td>
+            <td>天津</td>
+            <td>未审核</td>
+            <td>2009-8-31 08:45:06</td>
+            <td><a href="#">详细</a></td>
+            <td><a href="addorder.htm">查看</a></td>
+        </tr>
+    </table>
+    <br>
+    <table align="center">
+        <tr align="center">
+            <td style="text-align:center">
+                <a href="#"> 首页</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">上 一页</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">下一页</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">末页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                共几页&nbsp;&nbsp;&nbsp;&nbsp;
+                当前第几页 &nbsp;&nbsp;&nbsp;&nbsp;
+                跳转到第<input name="gonpage" type="text" size="2">
+                页
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
